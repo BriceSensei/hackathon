@@ -19,13 +19,56 @@
 
 <body>
     <header>
-
+        <h1>Bienvenue nous sommes les Ombres de La Manu !</h1> 
+        <h2>Nous sommes la pour couvrir tout vos méfaits...</h2>
     </header>
     <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="pb-3">
+                        Et voici votre excuse :
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim repudiandae fugiat ipsum facilis
+                        optio doloribus quidem, iure nesciunt molestiae officiis, perspiciatis distinctio error vel
+                        atque sunt laborum ut magnam. Aperiam!
+                    </p>
+                    <div class="alert alert-warning d-flex align-items-center" role="alert">
+                        Attention ! Vous avez<span id="pourcentage-break" class="fw-bold fs-4 px-2">45%</span>de chance de vous faire casser les genoux !
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
         <h1>
             Fichier de base pour développer :)
         </h1>
-    </main>
+        <div class="container">
+            <!-- Selection du prof -->
+            <select class="form-select" aria-label="Default select example" id="teacherName">
+                <option selected>Choisir le prof</option>
+                <option value="1">Fred</option>
+                <option value="2">Anou</option>
+                <option value="3">Seb</option>
+                <option value="4">Camille</option>
+            </select>
+            
+            <select class="form-select" aria-label="Default select example" id="categories">
+                <option selected>Choisir une catégorie</option>
+                <option value="1">Random</option>
+                <option value="2">Transport</option>
+                <option value="3">Animaux</option>
+                <option value="4">Météo</option>
+                <option value="5">Dernier espoir</option>
+            </select>
+
+            <label for="lateTime" class="form-label">Temps de retard</label>
+            <input type="range" class="form-range" min="0" max="3" id="lateTime">
+        </div>
+        
+
+    </main>                    
     <footer>
 
     </footer>
