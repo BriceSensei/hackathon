@@ -36,6 +36,10 @@ select {
     border-radius: 0.5rem;
 }
 
+.form-label {
+    color: #ffffff;
+}
+
 .bg-light {
     background-color: #00000030!important;
 }
