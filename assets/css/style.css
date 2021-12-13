@@ -36,6 +36,24 @@ select {
     border-radius: 0.5rem;
 }
 
+.bg-light {
+    background-color: #00000030!important;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(255 255 255 / 90%);
+    font-family: 'Anton', sans-serif;
+}
+
+#logo {
+    width: 2.5em;
+}
+
+footer {
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
 
 @media (max-width: 990px) { 
     .bg-light {
