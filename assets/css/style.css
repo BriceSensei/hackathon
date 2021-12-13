@@ -35,3 +35,16 @@ select {
     border: 1px solid #000000;
     border-radius: 0.5rem;
 }
+
+
+@media (max-width: 990px) { 
+    .bg-light {
+        --bs-bg-opacity: 1;
+        background-color: transparent!important;
+    }
+    .navbar-light .navbar-toggler {
+        color: rgb(0 0 0);
+        border-color: rgb(0 0 0 / 51%);
+        background-color: white;
+    }
+}
