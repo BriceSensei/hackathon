@@ -1,84 +1,116 @@
 /* -----------------------------------------------
-    Fichier JS
+    JS Files
 ----------------------------------------------- */
 
-// Vérification de la bonne connexion
+// Checking the correct connection
 console.log("Connexion JS - Ok")
 
 let apologies = [
     // Random
+    // Array remained empty so as not to create a conflict with the indexes
     [],
     // Transports
     [
-        'Transports 1',
-        'Transports 2',
-        'Transports 3',
-        'Transports 4',
+        'Bouchons sur le pont.',
+        'Les gilets jaunes ont bloqué la route.',
+        'Le cheminaux a oublié de se réveiller, il était à une dégustation de Rhum hier.',
+        'Le mec devant moi roulait lentement.',
+        'GreenPeace a braqué ma caisse.',
+        'Manifestation pour adopter une écriture inclusive.'
     ],
     // Animals
     [
-        'Animals 1',
-        'Animals 2',
-        'Animals 3',
-        'Animals 4',
+        'Y\'avait un ours dans mon jardin.',
+        'Mon chats a explosé celui du voisin.',
+        'J\'ai éclaté une biche en caisse.',
+        'j\'ai eu une portée de 19 chiots.',
+        'Mon perroquet a fait un infarctus.',
     ],
     // Weather
     [
-        'Weather 1',
-        'Weather 2',
-        'Weather 3',
-        'Weather 4',
+        '110 km/h de vent, j\'ai faillis m\'envoler.',
+        'J\'avais le soleil dans les yeux, obligé de ralentir.',
+        'Trop de neige sur la route.',
+        'Je me suis pas réveillé à cause de la comète Léonard qui est passé cette nuit.',
+        'Lune en Cancer mon astrologue m\'a conseillé de rester au lit.', 
     ],
     // WTF
     [
-        'WTF 1',
-        'WTF 2',
-        'WTF 3',
+        'J\'ai explosé Excalibur donc on m\'a convoqué au palais du Roi.',
+        'J\'ai formation Jedi de 8h à 10h.',
+        'J\'ai percuté un Chocobon sur la route.',
+        'Je me suis coincé les doigts dans la porte et comme elle était fermé à clef, je suis resté coincé.',
+        'Je bosse pour le KGB, si j\' étais arrivé à l\'heure vous seriez tous morts.',
+        'Mon Jungler était mauvais, j\'en ai fait des cauchemares.',
+        'Ne posez pas de question dont vous ne voulez pas connaître la réponse.', 
+        'Tu n\'as rien vue, rien entendu.',
+        'J\'ai pris un Wookie en stop.', 
+        'C\'est la faute de Tom.',
+        'Je ne pense pas qu\'il y est de bonne ou de mauvaise raison d\'être en retard.',
     ],
-    // Excuse Personnalisée
+    // Personalized Excuse
     [
         [
-            'Fred 1',
-            'Fred 2',
+            'Dégustation de rhum hier soir, j\'ai pas pus me réveiller.',
+            'Le chauffeur de bus avait une odeur de Trois Rivière.',
         ],
         [
-            'Anousone 1',
-            'Anousone 2',
+            'Hulk a explosé ma caisse.',
+            'Mjömnir était sur la route.',
         ],
         [
-            'Sébastien 1',
-            'Sébastien 2',
+            'Mon X-Wing est tombé en rade.',
+            'Controle des Men In Black au pont de Normandie.',
         ],
         [
-            'Camille 1',
-            'Camille 2',
+            'La quête du Grall passe avant toute chose.',
+            'J\'ai demandé au roi Arthur de me téléporter pour arriver à l\'heure, il m\'a envoyé voir son druide.',
+            'J\'ai participé au jeux du Cailoux, on a terminé à 6h du matin.'
         ],
     ]
 ];
 
+// Teachers coefficients
 let teachers = [
-    0.9,
-    0.3,
-    0.7,
-    0.5,
-]
-
-let categories = [
-    0.2,
-    0.6,
+    // Fred
     0.8,
-    0.5,
-    0.1,
-    0.1
+    // Anousone
+    0.4,
+    // Sébastien
+    0.7,
+    // Camille
+    0.6,
 ]
 
-let late = [
-    0.25,
-    0.5,
-    0.75,
+// Category coefficients
+let categories = [
+    // Aléatoire
+    0.6,
+    // Transports
+    0.2,
+    // Animaux
+    0.7,
+    // Météo
+    0.4,
+    // WTF
+    2,
+    // Personnalisée
     1,
 ]
 
+// Delays coefficients
+let late = [
+    // < 15 min
+    0.25,
+    // 15 à 45 min
+    0.6,
+    // 45 min à 1h30
+    0.8,
+    // > 1h30
+    1,
+]
+
+// Texts of delays
 let latelabels = [
     '< 15 min',
     '15 à 45 min',
@@ -88,8 +120,7 @@ let latelabels = [
 
 
 $(function () {
-    // Initialisation
-
+    // Initialization
     $('#late').val(0);
     $('#lateLabel').text(latelabels[0]);
 
@@ -129,19 +160,19 @@ $(function () {
         submitActivation();
     });
 
-    // Submit application
+    // Triggering of the calculation
 
     $("#generateApology").submit(function (event) {
-        // Démarrage de l'affichage
+        // Result display
         event.preventDefault();
         $('#result').removeClass("d-none");
 
-        // Calcul de la probabilité
+        // Calculating the probability
         prob = (teachers[teacherId] + categories[categoriesId] + late[lateId]) / 3 * 100;
         prob = Math.round(prob * 100) / 100 + ' %';
         $('#pourcentage').text(prob);
 
-        // Algorithme pour trouver l'excuse
+        // Algorithm to find the excuse
         if (categoriesId == 0) {
             indexArray = Math.floor(Math.random() * 4) + 1;
         }
@@ -168,16 +199,12 @@ $(function () {
     });
 });
 
-
 function submitActivation() {
+    // Checking the completion of the form
     let teacherStatus = $("#teacher").val();
     let categoryStatus = $("#categories").val();
-    // console.log(teacherStatus);
-    // console.log(categoryStatus);
 
     if (teacherStatus != null && categoryStatus != null) {
         $('#submitBtn').removeAttr("disabled");
-        // console.log('OK !');
     }
-    // console.log('Submit Test');
 }
