@@ -1,9 +1,10 @@
 /* -----------------------------------------------
     Fichier CSS
 ----------------------------------------------- */
------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 body {
     background: rgb(124,54,228);
     background: linear-gradient(90deg, rgba(124,54,228,1) 0%, rgba(159,92,195,1) 50%, rgba(200,0,182,1) 100%);
+    font-family: 'Anton', sans-serif;
 } 
