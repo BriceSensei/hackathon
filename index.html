@@ -18,6 +18,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
     <header class="pb-5">
         
     </header>
@@ -28,13 +29,54 @@
                     <h2 class="d-flex justify-content-center">Bienvenue</h2>
                     <p>Bienvenue nous sommes les Ombres de La Manu ! Nous sommes là pour couvrir tout vos méfaits en
                         vous donnant des excuses suivant le contexte !</p>
+=======
+    <header class="py-5">
+        <!-- <h1>
+                Fichier de base pour développer :)
+            </h1> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/hackathon/assets/img/logo.png" alt="" id="logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Catégories</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+
+        <div class="pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="d-flex justify-content-center">Bienvenue</h1>
+                        <p>Bienvenue nous sommes les Ombres de La Manu ! Nous sommes là pour couvrir tout vos
+                            méfaits en vous donnant des excuses suivant le contexte !</p>
+                    </div>
+>>>>>>> a148401f0d97e39909c8f17e431bcc3754fb70ab
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
                 <form action="#">
-                    <div class="mb-3">
+                    <div class="mb-3 col-8">
+                        <label for="name">Nom du formateur:</label>
                         <select class="form-select" aria-label="Default select example" id="teacherName">
                             <option value="0" selected>Choisir le prof</option>
                             <option value="0.9">Fred</option>
@@ -43,7 +85,8 @@
                             <option value="0.7">Camille</option>
                         </select>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 col-8">
+                        <label for="name">Nom de la categorie :</label>
                         <select class="form-select" aria-label="Default select example" id="categories">
                             <option selected>Choisir une catégorie</option>
                             <option value="0">Random</option>
@@ -53,12 +96,16 @@
                             <option value="4">Dernier espoir</option>
                         </select>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 col-8">
                         <label for="lateTime" class="form-label">Temps de retard</label>
                         <input type="range" class="form-range" min="0" max="3" id="lateTime">
                     </div>
                     <div class="mb-3">
+<<<<<<< HEAD
                         <button type="submit" class="btn btn-primary d-block mx-auto">Submit</button>
+=======
+                        <button type="submit" class="btn btn-dark d-block mx-auto" id="btn-submit">Submit</button>
+>>>>>>> a148401f0d97e39909c8f17e431bcc3754fb70ab
                     </div>
                 </form>
             </div>
@@ -82,13 +129,36 @@
             </div>
         </div>
     </main>
-    <footer>
 
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Google -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+            </section>
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <a class="text-dark" href="">LaManu</a>
+        </div>
+        <!-- Copyright -->
     </footer>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
