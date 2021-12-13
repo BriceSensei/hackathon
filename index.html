@@ -8,49 +8,62 @@
     <meta name="description"
         content="Ceci est un exemple de méta description. Cela apparaîtra souvent dans les résultats de recherche.">
     <title>Titre de la page</title>
-    <!-- CSS Custom -->
-    <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./assets/img/favicon-dev.ico">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <header class="py-5">
-        <h1>Bienvenue nous sommes les Ombres de La Manu !</h1>
-        <h2>Nous sommes la pour couvrir tout vos méfaits...</h2>
+        
     </header>
     <main>
+
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="d-flex justify-content-center">Bienvenue</h2>
+                        <p>Bienvenue nous sommes les Ombres de La Manu ! Nous sommes là pour couvrir tout vos méfaits en vous donnant des excuses suivant le contexte !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="container">
             <div class="row">
-                <div class="mb-3">
-                    <select class="form-select" aria-label="Default select example" id="teacherName">
-                        <option value="0" selected>Choisir le prof</option>
-                        <option value="0.9">Fred</option>
-                        <option value="0.3">Anou</option>
-                        <option value="0.5">Seb</option>
-                        <option value="0.7">Camille</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <select class="form-select" aria-label="Default select example" id="categories">
-                        <option selected>Choisir une catégorie</option>
-                        <option value="0">Random</option>
-                        <option value="1">Transport</option>
-                        <option value="2">Animaux</option>
-                        <option value="3">Météo</option>
-                        <option value="4">Dernier espoir</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="lateTime" class="form-label">Temps de retard</label>
-                    <input type="range" class="form-range" min="0" max="3" id="lateTime">
-                </div>
-                <div class="mb-3">
-                    <button type="submit" class="btn btn-primary d-block mx-auto">Submit</button>                    
-                </div>
+                <form action="#">
+                    <div class="mb-3">
+                        <select class="form-select" aria-label="Default select example" id="teacherName">
+                            <option value="0" selected>Choisir le prof</option>
+                            <option value="0.9">Fred</option>
+                            <option value="0.3">Anou</option>
+                            <option value="0.5">Seb</option>
+                            <option value="0.7">Camille</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select" aria-label="Default select example" id="categories">
+                            <option selected>Choisir une catégorie</option>
+                            <option value="0">Random</option>
+                            <option value="1">Transport</option>
+                            <option value="2">Animaux</option>
+                            <option value="3">Météo</option>
+                            <option value="4">Dernier espoir</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="lateTime" class="form-label">Temps de retard</label>
+                        <input type="range" class="form-range" min="0" max="3" id="lateTime">
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary d-block mx-auto">Submit</button>                    
+                    </div>
+                </form>
             </div>
             <div class="row">
                 <div class="col">
