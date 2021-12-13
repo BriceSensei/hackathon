@@ -23,11 +23,11 @@
     </header>
     <main>
 
-        <div>
+        <div class="pb-5">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="d-flex justify-content-center">Bienvenue</h2>
+                        <h1 class="d-flex justify-content-center">Bienvenue</h1>
                         <p>Bienvenue nous sommes les Ombres de La Manu ! Nous sommes là pour couvrir tout vos méfaits en vous donnant des excuses suivant le contexte !</p>
                     </div>
                 </div>
@@ -37,7 +37,8 @@
         <div class="container">
             <div class="row">
                 <form action="#">
-                    <div class="mb-3">
+                    <div class="mb-3 col-8">
+                        <label for="name">Nom du formateur:</label>
                         <select class="form-select" aria-label="Default select example" id="teacherName">
                             <option value="0" selected>Choisir le prof</option>
                             <option value="0.9">Fred</option>
@@ -46,7 +47,8 @@
                             <option value="0.7">Camille</option>
                         </select>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 col-8">
+                        <label for="name">Nom de la categorie :</label>
                         <select class="form-select" aria-label="Default select example" id="categories">
                             <option selected>Choisir une catégorie</option>
                             <option value="0">Random</option>
@@ -56,12 +58,12 @@
                             <option value="4">Dernier espoir</option>
                         </select>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 col-8">
                         <label for="lateTime" class="form-label">Temps de retard</label>
                         <input type="range" class="form-range" min="0" max="3" id="lateTime">
                     </div>
                     <div class="mb-3">
-                        <button type="submit" class="btn btn-primary d-block mx-auto">Submit</button>                    
+                        <button type="submit" class="btn btn-dark d-block mx-auto" id="btn-submit">Submit</button>                    
                     </div>
                 </form>
             </div>
