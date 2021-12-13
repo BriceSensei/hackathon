@@ -3,4 +3,4 @@
 ----------------------------------------------- */
 
 // Vérification de la bonne connexion
-console.log("Connexion JS - Ok")
+console.log("Connexion JS - Ok") 
