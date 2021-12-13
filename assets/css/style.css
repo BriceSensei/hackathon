@@ -4,10 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 body {
-    background: rgb(124,54,228);
-    background: linear-gradient(90deg, rgba(124,54,228,1) 0%, rgba(159,92,195,1) 50%, rgba(200,0,182,1) 100%);
+    background: rgb(124, 54, 228);
+    background: linear-gradient(90deg, rgba(124, 54, 228, 1) 0%, rgba(159, 92, 195, 1) 50%, rgba(200, 0, 182, 1) 100%);
     color: white;
-} 
+}
 
 form {
     display: flex;
@@ -17,6 +17,7 @@ form {
 
 h1, h2, h3, h4 {
     font-family: 'Anton', sans-serif;
+    letter-spacing: 2px;
 }
 
 select {
@@ -24,9 +25,9 @@ select {
 }
 
 #btn-submit {
-        font-family: 'Anton', sans-serif;
-        letter-spacing: 0.09em;
-        border-radius: 0.5rem;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.09em;
+    border-radius: 0.5rem;
 }
 
 .form-select {
@@ -41,7 +42,7 @@ select {
 }
 
 .bg-light {
-    background-color: #00000030!important;
+    background-color: #00000030 !important;
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
@@ -59,16 +60,18 @@ footer {
 }
 
 
-@media (max-width: 990px) { 
+@media (max-width: 990px) {
     .bg-light {
         --bs-bg-opacity: 1;
-        background-color: transparent!important;
+        background-color: transparent !important;
     }
+
     .navbar-light .navbar-toggler {
         color: rgb(0 0 0);
         border-color: rgb(0 0 0 / 51%);
         background-color: white;
     }
+
     /* #row {
         display: contents;
     } */
